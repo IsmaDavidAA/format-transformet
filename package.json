@@ -3,18 +3,21 @@
   "version": "1.0.0",
   "description": "This is my technicaltest to Flowingsoft",
   "main": "index.js",
+  "engines": {
+    "node": "14.17.6",
+    "npm": "7.22.0"
+  },
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js",
-    "start": "nodemon src/index.js"    
+    "start": "node src/index.js"
   },
   "author": "Ismael David Angulo Andrade",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
   },
   "repository": {

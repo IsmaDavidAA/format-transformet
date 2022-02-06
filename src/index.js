@@ -15,3 +15,7 @@ app.listen(app.get("port"), () => {
 
 //api routes
 app.use("/api", api);
+
+app.get("/", function (req, res) {
+  res.send("This is my timezone converter to technical test");
+});

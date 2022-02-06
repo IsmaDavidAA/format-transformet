@@ -3,9 +3,6 @@ var router = express.Router();
 var utilsTimeZone = require("../utils/utilTimeZone");
 var validatorTimeZone = require("../validator/validatorTimeZone");
 
-router.get("/", function (req, res) {
-  res.send("This is my timezone converter to technical test");
-});
 
 router.post("/transform_time", function (req, res) {
   if (validatorTimeZone.inputTransformTimeValidate(req)) {
